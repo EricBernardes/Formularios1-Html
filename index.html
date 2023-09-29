@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <form action=".teste" method="post">
+        Nome: <input type="text" size="80" name="nome"/>
+        Senha: <input type="password" name="senha" size="20" maxlength="20"/><br/> 
+        Data de Nascimento: <input type="date" name="nascimento" min="1990-01-01" max="2005-01-01"><br/>
+        E-mail: <input type="email" size="100" placeholder="Insira seu e-mail no formato exemplo@exemplo.exemplo"><br/>
+        CPF: <input type="text" pattern="[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2}"><br/>
+        Mensagem:<br/> 
+        <textarea rows="10" cols="50" name="mensagem"></textarea><br/>
+        Sexo:
+        <input type="radio" name="sexo" value="masculino"  checked="checked"/>Masculino
+        <input type="radio" name="sexo" value="feminino"/>Feminino<br/>
+        Jogos que joga: <br/>
+        <input type="checkbox" name="jogospreferidos" value="lol"/>LOL<br/>
+        <input type="checkbox" name="jogospreferidos" value="cs"/>CS<br/>
+        <input type="checkbox" name="jogospreferidos" value="cod"/>COD<br/>
+        <input type="checkbox" name="jogospreferidos" value="minecraft"/>Minecraft<br/>
+        Temperatura: <input type="range" name="temperatura" min="0" max="50" step="1"><br/>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpar"/>
+        <button type="submit">Enviar!</button>
+
+    </form>
+    
+</body>
+</html>
